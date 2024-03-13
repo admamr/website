@@ -830,6 +830,10 @@ h3.my-profession {
     max-width: 100%;
   }
 
+  .portfolio-item .btn {
+    padding-left: 150px;
+  }
+
   .nav-toggler {
     display: block;
     position: fixed;
