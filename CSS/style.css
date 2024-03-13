@@ -826,3 +826,24 @@ h3.my-profession {
     max-width: 100%;
   }
 }
+
+@media (max-width: 767px) {
+  .aside {
+    width: 100%; /* Set width to 100% to occupy full screen */
+    padding: 15px; /* Decrease padding for better mobile layout */
+    justify-content: flex-start; /* Align items to the start */
+    border-radius: 0; /* Remove border radius */
+  }
+
+  .logo {
+    margin-bottom: 20px; /* Add some margin at the bottom for spacing */
+  }
+
+  .nav {
+    flex-direction: column; /* Arrange navigation items vertically */
+  }
+
+  .nav li {
+    margin-bottom: 10px; /* Add margin between navigation items */
+  }
+}
