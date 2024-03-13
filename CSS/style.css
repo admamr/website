@@ -343,6 +343,10 @@ h3.my-profession {
   color: var(--text-black-700);
 }
 
+.mobile-img {
+  display: none;
+}
+
 .home .home-img {
   flex: 0 0 40%;
   max-width: 40%;
@@ -825,40 +829,47 @@ h3.my-profession {
     flex: 0 100%;
     max-width: 100%;
   }
-}
 
-/* For mobile screens */
-/* Temporary styling to make the navigation toggler visible */
-.nav-toggler {
-  display: block;
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  z-index: 1000; /* Ensure it's above other elements */
-  background-color: #fff; /* Temporary background color */
-  padding: 10px; /* Adjust padding as needed */
-  border-radius: 50%; /* Make it circular */
-  cursor: pointer;
-}
+  .nav-toggler {
+    display: block;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000; /* Ensure it's above other elements */
+    background-color: #fff; /* Temporary background color */
+    padding: 10px; /* Adjust padding as needed */
+    border-radius: 50%; /* Make it circular */
+    cursor: pointer;
+  }
 
-.nav-toggler span {
-  display: block;
-  width: 30px;
-  height: 4px;
-  background-color: #333;
-  margin-bottom: 5px;
-  transition: all 0.3s ease;
-}
+  .nav-toggler span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #333;
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+  }
 
-/* Styles for the toggled state of the navigation toggler */
-.nav-toggler.active span:nth-child(1) {
-  transform: translateY(10px) rotate(45deg);
-}
+  /* Styles for the toggled state of the navigation toggler */
+  .nav-toggler.active span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
 
-.nav-toggler.active span:nth-child(2) {
-  opacity: 0;
-}
+  .nav-toggler.active span:nth-child(2) {
+    opacity: 0;
+  }
 
-.nav-toggler.active span:nth-child(3) {
-  transform: translateY(-10px) rotate(-45deg);
+  .nav-toggler.active span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+  @media (max-width: 767px) {
+    .mobile-only {
+      display: block;
+      margin: 0 auto;
+      border-radius: 50%;
+      width: 200px; /* Adjust the width and height according to your preference */
+      height: 200px;
+    }
+  }
 }
