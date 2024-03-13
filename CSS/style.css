@@ -825,29 +825,4 @@ h3.my-profession {
     flex: 0 100%;
     max-width: 100%;
   }
-
-  .aside .logo a {
-    display: none;
-  }
-
-  .aside {
-    max-width: 100px;
-  }
-
-  .aside .nav li {
-    justify-content: center;
-    align-items: center;
-  }
-  .aside.open {
-    left: 0;
-    right: -270px;
-  }
-
-  .aside .nav-toggler.open {
-    left: 100px;
-  }
-
-  .aside .nav {
-    left: 60px;
-  }
 }
