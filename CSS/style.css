@@ -831,8 +831,7 @@ h3.my-profession {
   .aside {
     display: none; /* Initially hide the aside menu on mobile */
   }
-}
-
-.aside.active {
-  display: block; /* Show the aside menu when it's active */
+  .aside.active {
+    display: block; /* Show the aside menu when it's active */
+  }
 }
