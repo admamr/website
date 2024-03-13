@@ -864,7 +864,7 @@ h3.my-profession {
     transform: translateY(-10px) rotate(-45deg);
   }
 
-  .mobile-only {
+  .mobile-img {
     display: block;
     margin: 0 auto;
     border-radius: 50%;
