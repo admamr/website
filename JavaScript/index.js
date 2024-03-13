@@ -82,3 +82,11 @@ function asideSectionTogglerBtn() {
     allSection[i].classList.toggle("open");
   }
 }
+document.addEventListener("DOMContentLoaded", function () {
+  const navToggler = document.getElementById("navToggler");
+  const aside = document.querySelector(".aside");
+
+  navToggler.addEventListener("click", function () {
+    aside.classList.toggle("active");
+  });
+});
