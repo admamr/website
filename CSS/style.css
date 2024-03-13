@@ -868,8 +868,8 @@ h3.my-profession {
       display: block;
       margin: 0 auto;
       border-radius: 50%;
-      width: 200px; /* Adjust the width and height according to your preference */
-      height: 200px;
+      width: 70px; /* Adjust the width and height according to your preference */
+      height: 70px;
     }
   }
 }
