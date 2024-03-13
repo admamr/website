@@ -827,11 +827,45 @@ h3.my-profession {
   }
 }
 
+/* For mobile screens */
 @media (max-width: 767px) {
   .aside {
     display: none; /* Initially hide the aside menu on mobile */
   }
+
   .aside.active {
     display: block; /* Show the aside menu when it's active */
+  }
+
+  /* Show the navigation toggler */
+  .nav-toggler {
+    display: block;
+    position: fixed;
+    top: 20px;
+    left: 20px; /* Positioning the toggler to the top-left corner */
+    z-index: 11; /* Ensure it's above the aside menu */
+    cursor: pointer;
+  }
+
+  .nav-toggler span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #333;
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+  }
+
+  /* Styles for the toggled state of the navigation toggler */
+  .nav-toggler.active span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+
+  .nav-toggler.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav-toggler.active span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
   }
 }
