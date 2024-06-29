@@ -879,4 +879,7 @@ h3.my-profession {
     width: 150px;
     height: 150px;
   }
+  .main-container .aside .logo a {
+    font-size: 10px;
+  }
 }
