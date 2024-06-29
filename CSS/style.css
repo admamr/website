@@ -876,10 +876,7 @@ h3.my-profession {
     border-width: 10px;
     border: #151515;
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
-  }
-  .main-container .aside .logo a {
-    font-size: 10px;
+    width: 200px;
+    height: 200px;
   }
 }
