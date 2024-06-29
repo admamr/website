@@ -830,6 +830,10 @@ h3.my-profession {
     flex: 0 100%;
     max-width: 100%;
   }
+  .home .home-info {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 
   .portfolio-item .btn {
     margin-left: 150px;
@@ -876,7 +880,7 @@ h3.my-profession {
     border-width: 10px;
     border: #151515;
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   }
 }
