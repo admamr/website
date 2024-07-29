@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 (function () {
-  emailjs.init("admamr.227@gmail.com");
+  emailjs.init("g6avWLMCkf8684pQ0");
 })();
 
 document
