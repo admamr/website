@@ -90,3 +90,27 @@ document.addEventListener("DOMContentLoaded", function () {
     aside.classList.toggle("active");
   });
 });
+
+(function () {
+  emailjs.init("admamr.227@gmail.com");
+})();
+
+document
+  .getElementById("contact-form")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    // These IDs from the previous steps
+    const serviceID = "service_ltyccpa";
+    const templateID = "template_1yu7w3i";
+
+    // Send the form data to EmailJS
+    emailjs.sendForm(serviceID, templateID, this).then(
+      () => {
+        alert("Email sent successfully!");
+      },
+      (err) => {
+        alert(JSON.stringify(err));
+      }
+    );
+  });
